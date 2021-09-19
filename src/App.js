@@ -12,13 +12,12 @@ function App() {
         <div>
           <img src="" alt="Tejbegríz" />
         </div>
-        <div>
-          <div>
+        <div className="recipeInfo">
+          <div className="recipeInfo" style={{ border: "2px solid red" }}>
             <Clock />
             <p>15 min</p>
           </div>
           <Scale
-            title="Difficulty "
             rating={2}
             max={5}
             fullIcon={() => <Fire isFull />}
@@ -27,10 +26,10 @@ function App() {
         </div>
       </div>
 
-      <div>
-        <div>
+      <div className="recipe">
+        <div className="ingredients">
           <h3>Hozzávalók 3 főre</h3>
-          <ul>
+          <ul className="ingredients_list">
             <li>1l tej</li>
             <li>120g búzadara</li>
             <li>50g cukor</li>
