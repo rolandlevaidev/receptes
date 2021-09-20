@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+p {
+  padding: 0px;
+}
+
 .iconContainer {
   display: flex;
   flex-direction: row;
@@ -20,6 +24,15 @@
   flex-direction: row;
 }
 
+.ingredients {
+  border-right: 2px solid gray;
+  width: 75%;
+}
+
 .ingredients_list {
   list-style-type: none;
+}
+
+.method {
+  padding: 0 120px;
 }

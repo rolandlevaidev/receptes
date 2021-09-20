@@ -1,6 +1,6 @@
 import "./App.css";
-import Clock from "./components/Clock";
-import Fire from "./components/Fire";
+import Clock from "./components/Clock.js";
+import Fire from "./components/Fire.js";
 import Scale from "./Scale.js";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
           <img src="" alt="Tejbegríz" />
         </div>
         <div className="recipeInfo">
-          <div className="recipeInfo" style={{ border: "2px solid red" }}>
+          <div className="recipeInfo">
             <Clock />
             <p>15 min</p>
           </div>
@@ -38,7 +38,7 @@ function App() {
             <li>cukor, kakaópor, fahéj</li>
           </ul>
         </div>
-        <div>
+        <div className="method">
           <h3>Elkészítés</h3>
           <p>
             A tejben elkeverjük a búzadarát, a cukrot és a vaníliás cukrot, és
