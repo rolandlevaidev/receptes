@@ -1,4 +1,5 @@
 # Posts
+Ideas for posts from [[ReactJS]]
 ## 1. Intro to ReactJS
 React is a declarative, component-based JavaScript library for building user interfaces. It's the most well-known, the most sought-after and the most used among other JS libraries.
 You will need React and ReactDOM to write React applications for the web.
@@ -55,4 +56,52 @@ The first one, right?
 That is JSX. JSX is a fairly simple HTML-like syntax on top of the raw React API.
 This is possible thanks to [Babel](https://babeljs.io/), a JavaScript compiler.
 
-## 4. 
+## 4. Creating custom components
+Components are basically functions which return something that is “renderable” (more React elements, strings, `null`, numbers, etc.)
+
+The first argument to `React.createElement` can also be a function which returns something that’s renderable.
+
+Here are a few examples of Babel output for JSX:
+```jsx
+ui = <Capitalized /> // React.createElement(Capitalized)
+ui = <property.access /> // React.createElement(property.access)
+ui = <Property.Access /> // React.createElement(Property.Access)
+ui = <Property['Access'] /> // SyntaxError
+ui = <lowercase /> // React.createElement('lowercase')
+ui = <kebab-case /> // React.createElement('kebab-case')
+ui = <Upper-Kebab-Case /> // React.createElement('Upper-Kebab-Case')
+ui = <Upper_Snake_Case /> // React.createElement(Upper_Snake_Case)
+ui = <lower_snake_case /> // React.createElement('lower_snake_case')
+```
+So when making components, we capitalize the words.
+
+```jsx
+<Message greeting="Hello" subject="World" />
+<Message greeting="Goodbye" subject="World" />
+```
+What happens if I forget to pass the `greeting` or `subject` props? It’s not going to render properly. We’ll end up with a dangling comma somewhere. It would be nice if we got some sort of indication that we passed the wrong value to the component. This is what the `propTypes` feature is for. Here’s an example of how to use `propTypes`:
+```jsx
+function FavoriteNumber({favoriteNumber}) {
+  return <div>My favorite number is: {favoriteNumber}</div>
+}
+
+const PropTypes = {
+  number(props, propName, componentName) {
+    if (typeof props[propName] !== 'number') {
+      return new Error('Some useful error message here')
+    }
+  },
+}
+
+FavoriteNumber.propTypes = {
+  favoriteNumber: PropTypes.number,
+}
+```
+
+There are some pretty common things to validate, so the React team maintains a package of these called [`prop-types`](https://npm.im/prop-types). It can be added to a page by adding a script tag for it:
+```markup
+<script src="https://unpkg.com/prop-types@15.7.2/prop-types.js"></script>
+```
+
+One useful feature of JSX is [“React Fragments”](https://reactjs.org/docs/fragments.html). It’s a special kind of component from React which allows the positioning of two elements side-by-side rather than just nested.
+The component is available via `<React.Fragment>`.
