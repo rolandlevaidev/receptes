@@ -1,0 +1,47 @@
+{
+  "tejbegriz": {
+    "title": "Tejbegríz",
+    "imgSrc": "tejbegriz.jpg",
+    "time": "15",
+    "rating": 2,
+    "ingredientsList": [
+      "1l tej",
+      "120g búzadara",
+      "50g cukor",
+      "50g vaníliás cukor",
+      "25g vaj",
+      "cukor, kakaópor, fahéj"
+    ],
+    "description": "A tejben elkeverjük a búzadarát, a cukrot és a vaníliás cukrot, és beledobjuk a vajat is, majd közepes lángon folyamatos keverés mellett besűrítjük. Ha lágyabban szeretjük, adjunk hozzá még egy kevés tejet, mert hűlés közben is sűrűsödik a tejbegríz. Mikor szépen megszívták magukat a daraszemek, kimerjük a tejbegrízt 3-4 tálba, megszórjuk cukorral vagy porcukorral, és tetszőlegesen fahéjjal vagy kakaóporral."
+  },
+  "philly_cheese_steak": {
+    "title": "Philly Cheese Steak",
+    "imgSrc": "tejbegriz.jpg",
+    "time": "15",
+    "rating": 2,
+    "ingredientsList": [
+      "1l tej",
+      "120g búzadara",
+      "50g cukor",
+      "50g vaníliás cukor",
+      "25g vaj",
+      "cukor, kakaópor, fahéj"
+    ],
+    "description": "A tejben elkeverjük a búzadarát, a cukrot és a vaníliás cukrot, és beledobjuk a vajat is, majd közepes lángon folyamatos keverés mellett besűrítjük. Ha lágyabban szeretjük, adjunk hozzá még egy kevés tejet, mert hűlés közben is sűrűsödik a tejbegríz. Mikor szépen megszívták magukat a daraszemek, kimerjük a tejbegrízt 3-4 tálba, megszórjuk cukorral vagy porcukorral, és tetszőlegesen fahéjjal vagy kakaóporral."
+  },
+  "oatmeal": {
+    "title": "Oatmeal",
+    "imgSrc": "tejbegriz.jpg",
+    "time": "15",
+    "rating": 2,
+    "ingredientsList": [
+      "1l tej",
+      "120g búzadara",
+      "50g cukor",
+      "50g vaníliás cukor",
+      "25g vaj",
+      "cukor, kakaópor, fahéj"
+    ],
+    "description": "A tejben elkeverjük a búzadarát, a cukrot és a vaníliás cukrot, és beledobjuk a vajat is, majd közepes lángon folyamatos keverés mellett besűrítjük. Ha lágyabban szeretjük, adjunk hozzá még egy kevés tejet, mert hűlés közben is sűrűsödik a tejbegríz. Mikor szépen megszívták magukat a daraszemek, kimerjük a tejbegrízt 3-4 tálba, megszórjuk cukorral vagy porcukorral, és tetszőlegesen fahéjjal vagy kakaóporral."
+  }
+}
