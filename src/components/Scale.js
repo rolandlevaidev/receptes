@@ -8,7 +8,7 @@ const Scale = ({ rating = 0, max = 5, fullIcon, emptyIcon, title }) => {
   return (
     <div>
       {title && <span>{title}</span>}
-      <div className="iconContainer recipeInfo">
+      <div className="flex flex-row">
         {[...Array(rating)].map(() => fullIcon())}
         {[...Array(max - rating)].map(() => emptyIcon())}
       </div>
