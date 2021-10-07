@@ -5,7 +5,7 @@ import Scale from "./Scale";
 
 function Recipe({ recipe }) {
   if (!recipe) {
-    return <h1>Please choose a recipe... smh....</h1>;
+    return <h1>Please choose a recipe...</h1>;
   }
   return (
     <>
@@ -15,10 +15,10 @@ function Recipe({ recipe }) {
         <div>
           <img src={recipe.imgSrc} alt={recipe.title} />
         </div>
-        <div className="recipeInfo">
-          <div className="recipeInfo">
+        <div>
+          <div className="flex flex-row">
             <Clock />
-            <p>{recipe.time} min</p>
+            <p>{recipe.time} mins</p>
           </div>
           <Scale
             rating={recipe.rating}
@@ -31,7 +31,7 @@ function Recipe({ recipe }) {
 
       <div className="recipe">
         <div className="ingredients">
-          <h3>Hozzávalók 3 főre</h3>
+          <h3>Ingredients for {recipe.serving}</h3>
           <ul className="ingredients_list">
             {recipe.ingredientsList.map((ingredient) => (
               <li key={ingredient.trim().toLowerCase()}>{ingredient}</li>
@@ -39,7 +39,7 @@ function Recipe({ recipe }) {
           </ul>
         </div>
         <div className="method">
-          <h3>Elkészítés</h3>
+          <h3>Preparation</h3>
           <p>{recipe.description}</p>
         </div>
       </div>
