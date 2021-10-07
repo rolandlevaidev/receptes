@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-p {
-  padding: 0px;
-}
-
 .iconContainer {
   display: flex;
   flex-direction: row;
