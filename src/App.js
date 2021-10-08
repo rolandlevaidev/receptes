@@ -11,6 +11,7 @@ function App() {
 
   return (
     <>
+      <h1 className="text-2xl text-center font-bold">Receptes</h1>
       <RecipeSwitcher
         chosenRecipe={chosenRecipe}
         changeRecipe={changeRecipe}
