@@ -3,6 +3,8 @@ import Recipe from "./components/Recipe";
 import RecipeSwitcher from "./components/recipeSwitcher";
 import RecipeList from "./assets/recipeList.json";
 import mealList from "./assets/mealList.json";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   const [chosenRecipe, setChosenRecipe] = useState("");
@@ -11,13 +13,14 @@ function App() {
 
   return (
     <>
-      <h1 className="text-2xl text-center font-bold">Receptes</h1>
+      <Navbar />
       <RecipeSwitcher
         chosenRecipe={chosenRecipe}
         changeRecipe={changeRecipe}
         mealList={mealList}
       />
       <Recipe recipe={RecipeList[chosenRecipe]} />
+      <Footer />
     </>
   );
 }
