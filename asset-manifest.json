@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/receptes/static/css/main.5721f8b2.chunk.css",
+    "main.js": "/receptes/static/js/main.2f0bf894.chunk.js",
+    "main.js.map": "/receptes/static/js/main.2f0bf894.chunk.js.map",
+    "runtime-main.js": "/receptes/static/js/runtime-main.5fe58c83.js",
+    "runtime-main.js.map": "/receptes/static/js/runtime-main.5fe58c83.js.map",
+    "static/js/2.be628554.chunk.js": "/receptes/static/js/2.be628554.chunk.js",
+    "static/js/2.be628554.chunk.js.map": "/receptes/static/js/2.be628554.chunk.js.map",
+    "static/js/3.23f23bfd.chunk.js": "/receptes/static/js/3.23f23bfd.chunk.js",
+    "static/js/3.23f23bfd.chunk.js.map": "/receptes/static/js/3.23f23bfd.chunk.js.map",
+    "index.html": "/receptes/index.html",
+    "static/css/main.5721f8b2.chunk.css.map": "/receptes/static/css/main.5721f8b2.chunk.css.map",
+    "static/js/2.be628554.chunk.js.LICENSE.txt": "/receptes/static/js/2.be628554.chunk.js.LICENSE.txt",
+    "static/media/clock.61de6d13.svg": "/receptes/static/media/clock.61de6d13.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5fe58c83.js",
+    "static/js/2.be628554.chunk.js",
+    "static/css/main.5721f8b2.chunk.css",
+    "static/js/main.2f0bf894.chunk.js"
+  ]
+}
